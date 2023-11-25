@@ -33,7 +33,7 @@ createWeb3Modal({
   projectId
 })
 
-const { open, close } = useWeb3Modal()
+const { open } = useWeb3Modal()
 const handleButtonClick = () => {
   open()
 }
@@ -49,7 +49,9 @@ const handleButtonClick = () => {
     </WagmiConfig> */}
 
     {/* <w3m-button /> */}
-    <button onClick={handleButtonClick} style={{background: "#0000FF", borderRadius: "5px", color: "#fff", border: "none", padding: "1rem", margin: "1rem"}}>Connect Wallet</button>
+    <button onClick={handleButtonClick} style={{background: "#0000FF", borderRadius: "5px", color: "#fff", border: "none", padding: "1rem", margin: "1rem"}}>
+      Connect Wallet
+    </button>
   </>
   );
 }
